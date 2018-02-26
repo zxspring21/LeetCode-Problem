@@ -2,7 +2,7 @@
 There are some solutions in LeetCode from me.
 I write my solutions in Gitbook.
 You can click the link and find my solutions processes and ideas.
-
+https://zxspring21.gitbooks.io/leetcode/content/
 #	Title	Solution	Difficulty
 | No. | Topic Names | Language | Level |
 | ------| ------ | ------ | ------|
@@ -324,5 +324,3 @@ You can click the link and find my solutions processes and ideas.
 | 3 | Longest Substring Without Repeating Characters | C++ | Medium |
 | 2 | Add Two Numbers | C++ | Medium |
 | 1 | Two Sum | C++ | Medium |
-
-https://zxspring21.gitbooks.io/leetcode/content/
