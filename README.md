@@ -223,7 +223,7 @@ https://zxspring21.gitbooks.io/leetcode/content/
 | 105 | Construct Binary Tree from Preorder and Inorder Traversal | C++ | Medium |
 | 104 | Maximum Depth of Binary Tree | C++, Java | Easy |
 | 103 | Binary Tree Zigzag Level Order Traversal | C++ | Medium |
-| 102 | Binary Tree Level Order Traversal | C++, Java | Easy |
+| 102 | [Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal/discuss/402410/C%2B%2B-4ms-faster-than-93.44-easy-understanding) | C++ | Medium |
 | 101 | Symmetric Tree | C++ | Easy |
 | 100 | Same Tree | C++ | Easy |
 | 99 | Recover Binary Search Tree | C++ | Hard |
