@@ -1,6 +1,6 @@
 /**
  * 102. Binary Tree Level Order Traversal
- * https://leetcode.com/problems/binary-tree-level-order-traversal/discuss/402410/C%2B%2B-4ms-faster-than-93.44-easy-understanding)
+ * https://leetcode.com/problems/binary-tree-level-order-traversal/discuss/402410/C%2B%2B-4ms-faster-than-93.44-easy-understanding
  */
 
 /**
