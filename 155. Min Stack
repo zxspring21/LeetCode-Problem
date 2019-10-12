@@ -1,0 +1,33 @@
+/*
+ * 155. Min Stack
+ * https://leetcode.com/problems/min-stack/discuss/403094/C%2B%2B-120ms-faster-6.81-easy-understanding-Using-Vector
+ **/
+class MinStack {
+public:
+    /** initialize your data structure here. */
+    MinStack() {
+        
+    }
+    
+    void push(int x) {
+        vec.push_back(x);
+    }
+    
+    void pop() {
+        vec.pop_back();
+    }
+
+    int top() {
+        return vec.back();
+    }
+    
+    int getMin() {
+        int min = vec[0];
+        for(int i=1;i<vec.size();++i)
+            if(vec[i]<min)
+                min = vec[i];
+        return min;
+    }
+private:
+    vector<int> vec;
+};
