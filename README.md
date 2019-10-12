@@ -7,6 +7,7 @@ https://zxspring21.gitbooks.io/leetcode/content/
 #	Title	Solution	Difficulty
 | No. | Topic Names | Language | Level |
 | ------| ------ | ------ | ------|
+| 637 | [Average of Levels in Binary Tree](https://leetcode.com/problems/average-of-levels-in-binary-tree/discuss/403064/C%2B%2B-24ms-faster-40.95-easy-understanding)| C++ | Easy |
 | 477 | Total Hamming Distance | C++ | Medium |
 | 415 | Add Strings | C++ | Easy |
 | 414 | Third Maximum Number | C++ | Easy |
@@ -170,7 +171,7 @@ https://zxspring21.gitbooks.io/leetcode/content/
 | 158 | Read N Characters Given Read4 II - Call multiple times  | C++ | Hard |
 | 157 | Read N Characters Given Read4  | C++ | Easy |
 | 156 | Binary Tree Upside Down  | C++ | Medium |
-| 155 | Min Stack | C++ | Easy |
+| 155 | [Min Stack](https://leetcode.com/problems/min-stack/discuss/403094/C%2B%2B-120ms-faster-6.81-easy-understanding-Using-Vector) | C++ | Easy |
 | 154 | Find Minimum in Rotated Sorted Array II | C++ | Hard |
 | 153 | Find Minimum in Rotated Sorted Array | C++, Java | Medium |
 | 152 | Maximum Product Subarray | C++ | Medium |
@@ -326,4 +327,4 @@ https://zxspring21.gitbooks.io/leetcode/content/
 | 2 | Add Two Numbers | C++ | Medium |
 | 1 | Two Sum | C++ | Medium |
 
-2019/10/11
+2019/10/12
