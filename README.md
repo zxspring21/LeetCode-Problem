@@ -7,7 +7,7 @@ https://zxspring21.gitbooks.io/leetcode/content/
 #	Title	Solution	Difficulty
 | No. | Topic Names | Language | Level |
 | ------| ------ | ------ | ------|
-| 994 | [Rotting Oranges](https://leetcode.com/problems/rotting-oranges/discuss/407583/C%2B%2B-12ms-faster-than-15.90-BFS) | C++ | easy|
+| 994 | [Rotting Oranges](https://leetcode.com/problems/rotting-oranges/discuss/407583/C%2B%2B-4ms-faster-than-94.31-easy-understanding-BFS) | C++ | easy|
 | 637 | [Average of Levels in Binary Tree](https://leetcode.com/problems/average-of-levels-in-binary-tree/discuss/403064/C%2B%2B-24ms-faster-40.95-easy-understanding)| C++ | Easy |
 | 415 | Add Strings | C++ | Easy |
 | 414 | Third Maximum Number | C++ | Easy |
