@@ -1,0 +1,108 @@
+/**
+ * 994. Rotting Oranges
+ * https://leetcode.com/problems/rotting-oranges/discuss/407583/C%2B%2B-12ms-faster-than-15.90-BFS
+ */
+
+class Solution {
+public:
+    //Finding infect target
+    void checkingFreshOrange(bool &existFreshOrange,const pair<int,int>& coordinate){
+        set<pair<int,int>>::iterator findOrNot = s1.find(coordinate);
+        if(findOrNot!=s1.end()){
+            cout<<"Finding Fresh["<<coordinate.first<<","<<coordinate.second<<"]"<<endl;
+            q2.push(*findOrNot);
+            s1.erase(findOrNot);
+            existFreshOrange = 1;
+        }else{
+            cout<<"Can't find Fresh["<<coordinate.first<<","<<coordinate.second<<"]"<<endl;
+        }
+    }
+    //Checking moving direction safe.
+    int checkingSafe(pair<int,int>& coordinate){
+        bool existFreshOrange = 0;
+        //left, up, right, down
+        if( (coordinate.first-1)>=0 ){
+            //checking safe or not after moving
+            checkingFreshOrange(existFreshOrange,make_pair(coordinate.first-1,coordinate.second));
+        }
+        if( (coordinate.second+1)<col ){
+            //checking safe or not after moving
+            checkingFreshOrange(existFreshOrange,make_pair(coordinate.first,coordinate.second+1));
+        }
+        if( (coordinate.first+1)<row ){
+            //checking safe or not after moving
+            checkingFreshOrange(existFreshOrange,make_pair(coordinate.first+1,coordinate.second));
+        }
+        if( (coordinate.second-1)>=0 ){
+            //checking safe or not after moving
+            checkingFreshOrange(existFreshOrange,make_pair(coordinate.first,coordinate.second-1));
+        }
+        cout<<"existFreshOrange: "<< existFreshOrange<<endl;
+        /*Moving to main
+         *
+        if(existFreshOrange!=0)
+            minimumMoving+=1;
+        */
+        return existFreshOrange;
+            
+    }    
+    int orangesRotting(vector<vector<int>>& grid) {
+        ////traversal and calculate the 0,1,2
+        this->row = grid.size();
+        this->col = grid[0].size();
+        this->grid = grid;
+        /*
+        cout<<row<<endl;
+        cout<<col<<endl;
+        */
+        /*
+        grid.resize(row);
+        for(int i=0;i<row;++i){
+            grid[i].resize(col);
+        }
+        */
+        for(int i=0;i<row;++i){
+            for(int j=0;j<col;++j){
+                cout<<grid[i][j]<<",";
+            }
+            cout<<endl;
+        }
+        bool result=0;
+        for(int i=0;i<row;++i){
+            for(int j=0;j<col;++j){
+                if(grid[i][j]==1)
+                    s1.insert(make_pair(i,j));
+                else if(grid[i][j]==2)
+                    q2.push(make_pair(i,j));
+            }
+        }
+        
+        while(!q2.empty()){
+            int sz = q2.size();
+            int existFreshOrange=0;
+            for(int i=0;i<sz;++i){
+                coordinate = q2.front();
+                q2.pop();
+                //Rotting orange infects in 4 direction
+                existFreshOrange += checkingSafe(coordinate);        
+            }
+            if(existFreshOrange!=0)
+                minimumMoving+=1;
+        
+        }
+        if ((q2.empty())&&(!s1.empty()))
+            return -1;
+         return minimumMoving;
+        
+        
+    }
+private:
+    vector<vector<int>> grid;
+    int row;
+    int col;
+    //queue<pair<int,int>> q0;
+    set<pair<int,int>> s1; //fresh
+    queue<pair<int,int>> q2; //rotted
+    pair<int,int> coordinate;
+    int minimumMoving= 0;
+};
