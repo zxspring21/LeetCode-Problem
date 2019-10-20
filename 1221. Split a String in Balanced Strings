@@ -1,0 +1,22 @@
+/*
+ * 1221. Split a String in Balanced Strings
+ * https://leetcode.com/problems/split-a-string-in-balanced-strings/discuss/409447/C%2B%2B-4-ms-faster-than-57.84
+ */
+class Solution {
+public:
+    int balancedStringSplit(string s) {
+        int length = s.size();
+        stack<char> st;
+        int maximum_amount = 0;
+        for(int i=0; i<length; ++i){
+            if(st.empty()||(st.top()==s[i])){
+                st.push(s[i]);
+            }else{
+                st.pop();
+            }
+            if(st.empty())
+                ++maximum_amount;
+        }
+        return maximum_amount;
+    }
+};
