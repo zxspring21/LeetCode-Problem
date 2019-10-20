@@ -7,6 +7,7 @@ https://zxspring21.gitbooks.io/leetcode/content/
 #	Title	Solution	Difficulty
 | No. | Topic Names | Language | Level |
 | ------| ------ | ------ | ------|
+| 1221 | [Split a String in Balanced Strings](https://leetcode.com/problems/split-a-string-in-balanced-strings/discuss/409447/C%2B%2B-4-ms-faster-than-57.84) | C++ | Easy |
 | 994 | [Rotting Oranges](https://leetcode.com/problems/rotting-oranges/discuss/407583/C%2B%2B-4ms-faster-than-94.31-easy-understanding-BFS) | C++ | easy|
 | 637 | [Average of Levels in Binary Tree](https://leetcode.com/problems/average-of-levels-in-binary-tree/discuss/403064/C%2B%2B-24ms-faster-40.95-easy-understanding)| C++ | Easy |
 | 415 | Add Strings | C++ | Easy |
