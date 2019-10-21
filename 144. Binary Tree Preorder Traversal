@@ -1,0 +1,49 @@
+/*
+ * 144. Binary Tree Preorder Traversal
+ * https://leetcode.com/problems/binary-tree-preorder-traversal/discuss/410160/C%2B%2B-8ms-faster-100-Recursive-and-Iterative-versions
+ */
+/**
+ * Definition for a binary tree node.
+ * struct TreeNode {
+ *     int val;
+ *     TreeNode *left;
+ *     TreeNode *right;
+ *     TreeNode(int x) : val(x), left(NULL), right(NULL) {}
+ * };
+ */ 
+//Recursive
+class Solution {
+public:
+    void recursive(TreeNode* node){
+        if(node==nullptr) return;
+        vec.push_back(node->val);
+        recursive(node->left);
+        recursive(node->right);
+    }
+    vector<int> preorderTraversal(TreeNode* root) {
+        recursive(root);
+        return vec;
+    }
+private:
+    vector<int> vec;
+};
+//Iterative
+class Solution {
+public:
+    vector<int> preorderTraversal(TreeNode* root) {
+        if(root==nullptr) return{};
+        vector<int> vec;
+        stack<TreeNode*> st;
+        st.push(root);
+        while(!st.empty()){
+            TreeNode* node = st.top();
+            st.pop();
+            vec.push_back(node->val);
+            if(node->right!=nullptr)
+                st.push(node->right);
+            if(node->left!=nullptr)
+                st.push(node->left);
+        }
+        return vec;
+    }
+};
