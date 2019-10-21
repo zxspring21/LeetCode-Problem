@@ -1,0 +1,41 @@
+/*
+ * 589. N-ary Tree Preorder Traversal
+ * https://leetcode.com/problems/n-ary-tree-preorder-traversal/discuss/410149/C%2B%2B-148-ms-faster-than-80.53-Iterative-Recursive
+ */
+//Iterative, 148 ms, faster than 80.53%, stack
+class Solution {
+public:
+    vector<int> preorder(Node* root) {
+        if(root==nullptr) return{};
+        stack<Node*> st;
+        vector<int> ans;
+        st.push(root);
+        
+        while(!st.empty()){
+            Node* node = st.top();
+            st.pop();
+            ans.push_back(node->val);
+            for(int i=(node->children).size()-1;i>=0;--i){
+                st.push(node->children[i]);
+            }
+        }
+        return ans;
+    }
+};
+//Recursive, 160 ms, faster than 27.25%
+class Solution {
+public:
+    vector<int> preorder(Node* root) {
+        recursive(root);
+        return vec;
+    }
+    void recursive(Node* node){
+        if(node ==nullptr)  return;
+        vec.push_back(node->val);
+        for(int i=0;i<node->children.size();++i){
+            recursive(node->children[i]);
+        }
+    }
+private:
+    vector<int> vec;
+};
