@@ -138,7 +138,7 @@ https://zxspring21.gitbooks.io/leetcode/content/
 | 208 | Implement Trie (Prefix Tree) | C++ | Medium |
 | 207 | Course Schedule | C++ | Medium |
 | 206 | Reverse Linked List | C++ | Easy |
-| 205 | Isomorphic Strings | C++ | Easy |
+| 205 | [Isomorphic Strings](https://leetcode.com/problems/isomorphic-strings/discuss/410146/C%2B%2B-8-ms-faster-than-86.76) | C++ | Easy |
 | 204 | [Count Primes](https://leetcode.com/problems/count-primes/discuss/407837/C%2B%2B-28-ms-faster-85.75) | C++ | Easy |
 | 203 | Remove Linked List Elements | C++ | Easy |
 | 202 | Happy Number | C++ | Easy |
