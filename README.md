@@ -184,7 +184,7 @@ https://zxspring21.gitbooks.io/leetcode/content/
 | 147 | Insertion Sort List | C++ | Medium |
 | 146 | LRU Cache | C++, Java | Hard |
 | 145 | Binary Tree Postorder Traversal | C++ | Hard |
-| 144 | Binary Tree Preorder Traversal | C++, Java | Medium |
+| 144 | [Binary Tree Preorder Traversal](https://leetcode.com/problems/binary-tree-preorder-traversal/discuss/410160/C%2B%2B-8ms-faster-100-Recursive-and-Iterative-versions) | C++ | Medium |
 | 143 | Reorder List | C++ | Medium |
 | 142 | Linked List Cycle II | C++ | Medium |
 | 141 | Linked List Cycle | C++ | Medium |
