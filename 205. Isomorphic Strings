@@ -1,0 +1,33 @@
+/*
+ * 205. Isomorphic Strings
+ * https://leetcode.com/problems/isomorphic-strings/
+ */
+class Solution {
+public:
+    bool isIsomorphic(string s, string t) {
+        if(s.empty()&&t.empty()) return true;
+        if(s.size()!=t.size()) return false;
+        vector<char> s_vec(128,NULL);
+        vector<char> t_vec(128,NULL);
+        int length = s.size();
+        char s_c,t_c;
+        for(int i=0;i<length;++i){
+            s_c = s[i];
+            t_c = t[i];
+            if(s_vec[s_c]==NULL){
+                s_vec[s_c] = t[i];
+            }else{
+                if(s_vec[s_c]!=t[i])
+                    return false;
+            }
+            if(t_vec[t_c]==NULL){
+                t_vec[t_c] = s[i];
+            }else{
+                if(t_vec[t_c]!=s[i])
+                    return false;
+            }
+        }
+        return true;
+       
+    }
+};
