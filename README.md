@@ -206,7 +206,7 @@ https://zxspring21.gitbooks.io/leetcode/content/
 | 125 | Valid Palindrome | C++ | Easy |
 | 124 | Binary Tree Maximum Path Sum | C++, Java | Hard |
 | 123 | Best Time to Buy and Sell Stock III | C++ | Hard |
-| 122 | [Best Time to Buy and Sell Stock II](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/discuss/408389/C%2B%2B-8-ms-faster-than-61.24) | C++ | Easy |
+| 122 | [Best Time to Buy and Sell Stock II](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/discuss/408389/C%2B%2B-4-ms-faster-than-97.94) | C++ | Easy |
 | 121 | [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/discuss/408169/C%2B%2B-0ms-faster-100) | C++ | Easy |
 | 120 | Triangle | C++, Java | Medium |
 | 119 | Pascal's Triangle II | C++ | Easy |
