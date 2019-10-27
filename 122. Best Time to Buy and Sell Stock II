@@ -1,22 +1,15 @@
 /*
  * 122. Best Time to Buy and Sell Stock II
- * https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/discuss/408389/C%2B%2B-8-ms-faster-than-61.24
+ * https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/discuss/408389/C%2B%2B-4-ms-faster-than-97.94
  */
- class Solution {
+class Solution {
 public:
     int maxProfit(vector<int>& prices) {
         int sz = prices.size();
         int maximumProfit = 0;
-        int minimum=INT_MAX;
-        int past=0;
         for(int i=0;i<sz-1;++i){
-           if(prices[i]<minimum)
-               minimum = prices[i];
             if(prices[i+1]>prices[i])
                 maximumProfit+=prices[i+1]-prices[i];
-            else{
-                minimum=INT_MAX;
-            }
         }
         return maximumProfit;
     }
