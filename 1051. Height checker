@@ -1,0 +1,19 @@
+/*
+ * 1051. Height Checker
+ * https://leetcode.com/problems/height-checker/discuss/416107/C%2B%2B-0-ms-faster-than-100.00
+ */
+ 
+class Solution {
+public:
+    int heightChecker(vector<int>& heights) {
+        int sz = heights.size();
+        vector<int> ret(heights);
+        sort(ret.begin(),ret.end());
+        int wrongPos = 0;
+        for(int i=0; i<sz; ++i){
+            if(ret[i]!=heights[i])
+                ++wrongPos;
+        }
+        return wrongPos;
+    }
+};
