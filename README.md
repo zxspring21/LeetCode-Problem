@@ -8,6 +8,7 @@ https://zxspring21.gitbooks.io/leetcode/content/
 | No. | Topic Names | Language | Level |
 | ------| ------ | ------ | ------|
 | 1221 | [Split a String in Balanced Strings](https://leetcode.com/problems/split-a-string-in-balanced-strings/discuss/409447/C%2B%2B-4-ms-faster-than-57.84) | C++ | Easy |
+| 1051 | [Height checker](https://leetcode.com/problems/height-checker/discuss/416107/C%2B%2B-0-ms-faster-than-100.00) | C++ | Easy
 | 997 | [Squares of a Sorted Array](https://leetcode.com/problems/squares-of-a-sorted-array/discuss/414735/C%2B%2B-112-ms-faster-than-53.68) | C++ | Easy |
 | 994 | [Rotting Oranges](https://leetcode.com/problems/rotting-oranges/discuss/407583/C%2B%2B-4ms-faster-than-94.31-easy-understanding-BFS) | C++ | Easy|
 | 867 | [Transpose Matrix](https://leetcode.com/problems/transpose-matrix/discuss/416101/C%2B%2B-28-ms-faster-than-58.63) | C++ | Easy
