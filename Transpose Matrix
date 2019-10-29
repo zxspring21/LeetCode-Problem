@@ -1,0 +1,20 @@
+/*
+ * 867. Transpose Matrix
+ * https://leetcode.com/problems/transpose-matrix/discuss/416101/C%2B%2B-28-ms-faster-than-58.63
+ */
+
+class Solution {
+public:
+    vector<vector<int>> transpose(vector<vector<int>>& A) {
+        int row = A.size();
+        int col = A[0].size();
+        vector<vector<int>> ret(col);
+        for(int i=0;i<col; ++i) ret[i].resize(row);
+        for(int i=0;i<row; ++i){
+            for(int j=0;j<col; ++j){
+                ret[j][i] = A[i][j];
+            }
+        }
+        return ret;
+    }
+};
